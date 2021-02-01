@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> The Olympic Symbol </title>
+</head>
+
+<body id="Background">
+    <center>
+        <h1> The Olympic Symbol </h1>
+        <canvas id="MyCanvas" height="600" width="800"></canvas>
+    </center>
+    <style>
+        h1 {
+            color: red;
+            font-size: 40px;
+        }
+
+        #Background {
+            background-image: url("Background.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #MyCanvas {
+            background-color: white;
+            border-style: ridge;
+            border-width: 10px;
+        }
+    </style>
+    <script>
+        Canvas = document.getElementById("MyCanvas")
+        Ctx = Canvas.getContext("2d");
+
+        Ctx.beginPath();
+        Ctx.strokeStyle = "grey";
+        Ctx.lineWidth = 4;
+        Ctx.rect(150, 143, 430, 200);
+        Ctx.stroke();
+
+        Ctx.beginPath();
+        Ctx.strokeStyle = "blue";
+        Ctx.lineWidth = 5;
+        Ctx.arc(250, 210, 40, 0, 2 * Math.PI);
+        Ctx.stroke();
+
+        Ctx.beginPath();
+        Ctx.strokeStyle = "black";
+        Ctx.lineWidth = 5;
+        Ctx.arc(350, 210, 40, 0, 2 * Math.PI);
+        Ctx.stroke();
+
+        Ctx.beginPath();
+        Ctx.strokeStyle = "red";
+        Ctx.lineWidth = 5;
+        Ctx.arc(450, 210, 40, 0, 2 * Math.PI);
+        Ctx.stroke();
+        
+        Ctx.beginPath();
+        Ctx.strokeStyle = "orange";
+        Ctx.lineWidth = 5;
+        Ctx.arc(300, 250, 40, 0, 2 * Math.PI);
+        Ctx.stroke();
+        
+        Ctx.beginPath();
+        Ctx.strokeStyle = "darkgreen";
+        Ctx.lineWidth = 5;
+        Ctx.arc(400, 250, 40, 0, 2 * Math.PI);
+        Ctx.stroke();
+    </script>
+</body>
+
+
+</html>
